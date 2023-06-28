@@ -1,0 +1,21 @@
+/* CSS for contact section */
+.contact {
+  z-index: 3;
+}
+
+.contact .contact-info {
+  text-align: center;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  margin-bottom: 10px;
+}

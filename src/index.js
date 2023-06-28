@@ -1,6 +1,11 @@
 "use strict";
 
+import "./global.styles.css";
 import "./styles.css";
+import "./topBar.styles.css";
+import "./hero.styles.css";
+import "./about.styles.css";
+import "./contact.styles.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.createElement("div");
