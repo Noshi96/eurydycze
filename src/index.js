@@ -5,6 +5,7 @@ import "./styles.css";
 import "./topBar.styles.css";
 import "./hero.styles.css";
 import "./about.styles.css";
+import "./therapy.styles.css";
 import "./contact.styles.css";
 
 document.addEventListener("DOMContentLoaded", () => {

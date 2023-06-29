@@ -1,0 +1,92 @@
+.therapy-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-image: url('/public/muhammad-haikal-sjukri--RMBf_xSf2U-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
+.therapy-list h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 3em;
+  width: 550px;
+  line-height: 0.875em;
+}
+
+.therapy-list p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1em;
+  width: 750px;
+  background-color: #000000a4;
+  padding: 1rem;
+  line-height: 1.5em;
+}
+
+.therapy-list .therapy-list-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  list-style: none;
+}
+
+.therapy-list .therapy-list-list li {
+  width: 320px;
+  height: 180px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.therapy-list .therapy-list-list li a {
+  color: #ffffff;
+  font-size: 1em;
+  text-decoration: underline;
+  z-index: 4;
+  font-weight: 700;
+  font-size: 1.125em;
+  margin-right: 28px;
+  cursor: pointer;
+}
+
+.therapy-list .therapy-list-list li span {
+  position: absolute;
+  color: #93363e;
+  font-size: 7em;
+  font-family: 'LuloClean', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .therapy-list {
+    padding-top: 2rem;
+    height: 100%;
+    background-position:center;
+  }
+
+  .therapy-list h2 {
+    width: 100%;
+    line-height: 1.25em;
+  }
+
+  .therapy-list p {
+    width: 100%;
+  }
+
+  .therapy-list .therapy-list-list {
+    width: 100%;
+  }
+
+  .therapy-list .therapy-list-list li {
+    width: 100%;
+  }
+}

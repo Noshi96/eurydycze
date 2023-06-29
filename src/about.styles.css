@@ -1,16 +1,81 @@
 /* CSS for about-me section */
-.about-me .about-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-  background-color: #E91624;
-  width: 100%;
-  height: 100%;
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.about-me .about-content img {
-  width: 300px;
-  margin-right: 20px;
+.about-me .about-me-img {
+  background-image: url('/public/airis-nikolaeva--Vykfrw_D-A-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-me .about-me-img-nested {
+  display: none;
+}
+
+.about-me .about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 3;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding-left: 5.5rem;
+  font-size: 1.125em;
+  width: 100%;
+}
+
+.about-me .about-content p {
+  width: 455px;
+  line-height: 1.750em;
+}
+
+.about-content .about-content-header span {
+  font-family: 'LuloClean', sans-serif;
+}
+
+.about-content .about-content-header h2 {
+  margin-top: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  line-height: .9em;
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    grid-template-columns: 1fr;
+  }
+  .about-me .about-me-img {
+    display: none;
+  }
+  .about-me .about-content {
+    padding: 2.5rem;
+  }
+  .about-me .about-content p {
+    width: 325px;
+    line-height: 1.750em;
+  }
+  .about-me .about-me-img-nested {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-me .about-content p {
+    width: 275px;
+  }
 }
