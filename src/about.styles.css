@@ -54,6 +54,7 @@
 @media (max-width: 768px) {
   .about-me {
     grid-template-columns: 1fr;
+    height: 100%;
   }
   .about-me .about-me-img {
     display: none;

@@ -22,8 +22,10 @@ body {
 
 /* CSS for footer */
 footer {
+  
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #000000;
+  color: #ffffff;
   padding: 10px;
 }
 
