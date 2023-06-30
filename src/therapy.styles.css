@@ -33,8 +33,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
   list-style: none;
+  padding-inline-start: 0;
 }
 
 .therapy-list .therapy-list-list li {
@@ -68,7 +69,7 @@
 
 @media (max-width: 768px) {
   .therapy-list {
-    padding-top: 2rem;
+    padding: 2rem 0;
     height: 100%;
     background-position:center;
   }
@@ -87,6 +88,18 @@
   }
 
   .therapy-list .therapy-list-list li {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+  }
+
+  .therapy-list .therapy-list-list li span {
+    position: relative;
+    font-size: 3em;
+  }
+
+  .therapy-list .therapy-list-list li a {
+    font-size: 1.375em;
+    margin-right: 0;
   }
 }

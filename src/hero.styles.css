@@ -45,22 +45,6 @@
   line-height: 36px;
 }
 
-.hero .hero-column .cta-button {
-  background-color: #E91624;
-  color: #000000;
-  font-weight: 700;
-  padding: 16px 32px;
-  border: none;
-  font-size: 1em;
-  cursor: pointer;
-  width: fit-content;
-}
-
-.hero .hero-column .cta-button:hover {
-  background-color: #b22933;
-  color: #ffffff;
-}
-
 .hero-additional-info {
   display: grid;
   grid-column: 1 / span 2;

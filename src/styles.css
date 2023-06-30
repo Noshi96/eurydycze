@@ -7,11 +7,6 @@ section {
   align-items: center;
 }
 
-/* @font-face {
-  font-family: 'LuloClean';
-  src: url('/assets/fonts/39a2c7f346d5cfae7045aeb2fb50d9ad.woff2') format('wolf2');
-} */
-
 @font-face {
   font-family: LuloClean;
   src: url('/public/fonts/Lulo\ Clean\ W01\ One\ Bold.ttf') format("opentype");
@@ -30,4 +25,24 @@ footer {
   text-align: center;
   background-color: #f5f5f5;
   padding: 10px;
+}
+
+.cta-button {
+  background-color: #E91624;
+  color: #000000;
+  font-weight: 700;
+  padding: 16px 32px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cta-button:hover {
+  background-color: #b22933;
+  color: #ffffff;
+}
+
+body * {
+  border: 1px solid cyan;
 }
