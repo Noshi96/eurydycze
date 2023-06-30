@@ -1,21 +1,115 @@
 /* CSS for contact section */
 .contact {
-  z-index: 3;
+  background-image: url('/public/airis-nikolaeva--Vykfrw_D-A-unsplash.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #ffffff;
+  padding-top: 10rem;
 }
 
 .contact .contact-info {
   text-align: center;
 }
 
-.contact form {
+.contact-form-column {
+  width: 360px;
+}
+
+.contact-form-column form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 20px;
+  width: 100%;
+}
+
+.contact-form-column form input, textarea {
+  width: 100%;
+  border: 3px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 8px;
+}
+
+.contact-form-column form textarea {
+  height: 120px;
+}
+
+.contact-form-column form button {
+  align-self: flex-end;
 }
 
 .contact form input,
 .contact form textarea {
   margin-bottom: 10px;
 }
+
+.contact h2 {
+  font-size: 2.125em;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-info {
+  width: 400px;
+  display: grid;
+  justify-self: end;
+  align-self: start;
+}
+
+.contact-info-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.125rem;
+}
+
+.contact-info-column span {
+  font-weight: 700;
+  font-size: 1.125em;
+}
+
+.contact-info-column p {
+  font-size: 0.875em;
+}
+
+.contact-form {
+  align-self: start;
+}
+
+.contact-form-column form label{
+  font-size: 0.875em;
+}
+
+.contact-info-column-socials {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 5rem;
+    height: 100vh;
+    background-size: cover;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .contact-form-column {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+}
+
