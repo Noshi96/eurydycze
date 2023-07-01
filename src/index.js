@@ -8,6 +8,7 @@ import "./about.styles.css";
 import "./therapy.styles.css";
 import "./testimonials.styles.css";
 import "./contact.styles.css";
+import "./price-list.styles.css";
 
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.createElement("div");
